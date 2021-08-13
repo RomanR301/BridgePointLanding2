@@ -91,7 +91,7 @@
       }
       @media (max-width: $breakpoint-lg) {
         max-width: 60%;
-        font-size: 21px;
+        font-size: 16px;
       }
       @media (max-width: $breakpoint-md) {
         max-width: 100%;
@@ -154,15 +154,16 @@
           font-weight: 700;
           line-height: 1.3;
           text-decoration: none;
-          @media (max-width: $breakpoint-md) {
-            font-size: 14px;
-          }
         }
       }
       & a {
         color: $whiteColor;
         line-height: 1.3;
         text-decoration: underline;
+        font-size: 18px;
+        @media (max-width: $breakpoint-lg) {
+          font-size: 16px;
+        }
         @media (max-width: $breakpoint-md) {
           font-size: 14px;
         }
@@ -207,12 +208,13 @@
     }
   }
   h2 {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.3;
     color: $darkBlue;
     margin-bottom: 40px;
     font-weight: 700;
     max-width: 70%;
+    font-family: "HelveticaNowDisplay-XBd", sans-serif;
     @media (max-width: $breakpoint-xl) {
       font-size: 30px;
       line-height: 36px;
@@ -222,7 +224,7 @@
       line-height: 32px;
     }
     @media (max-width: $breakpoint-md) {
-      padding-top: 50px;
+      padding-top: 30px;
       max-width: 100%;
       font-size: 24px;
       margin-bottom: 30px;
@@ -236,8 +238,6 @@
     right: 0;
     @media (max-width: $breakpoint-xl) {
       right: 30px;
-    }
-    @media (max-width: $breakpoint-lg) {
       width: 120px;
       height: 90px;
     }
@@ -324,7 +324,7 @@
     padding: 16px 0 16px 0;
   }
   &__title {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 36px;
     line-height: 48px;
     color: #014f82;
@@ -400,6 +400,12 @@
   }
   @media (max-width: $breakpoint-md) {
     padding: 40px 0 10px 0;
+  }
+  .row {
+    margin: 0 -15px;
+    @media (max-width: $breakpoint-md) {
+      margin: 0;
+    }
   }
   .container {
     @media (max-width: $breakpoint-md) {
@@ -503,6 +509,11 @@
         font-size: 21px;
       }
     }
+    p, a {
+      @media (max-width: $breakpoint-lg) {
+        font-size: 16px;
+      }
+    }
     & a {
       font-weight: 700;
       color: $darkBlue;
@@ -521,7 +532,7 @@
   margin-bottom: 60px;
   position: relative;
   @media (max-width: $breakpoint-md) {
-    height: 840px;
+    height: 750px;
   }
   .container {
     height: 100%;
@@ -538,13 +549,15 @@
     }
     .mobile-image {
       display: none;
-      @media (max-width: $breakpoint-sm) {
+      @media (max-width: $breakpoint-md) {
         display: block;
+        object-position: bottom;
       }
     }
     .desktop-image {
-      @media (max-width: $breakpoint-sm) {
+      @media (max-width: $breakpoint-md) {
         display: none;
+        
       }
     }
   }
