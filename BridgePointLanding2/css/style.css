@@ -1399,6 +1399,10 @@ label[for="file-upload"] {
   margin: 0 10px;
 }
 
+.col-12 {
+  padding: 0 15px;
+}
+
 .family-main-screen {
   height: 560px;
   position: relative;
@@ -1459,7 +1463,7 @@ label[for="file-upload"] {
 
 .family-main-screen__content p span {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.3;
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
@@ -2278,6 +2282,7 @@ label[for="file-upload"] {
 
   .container {
     padding: 0 30px;
+    max-width: 960px;
   }
 
   .m-row {
@@ -2413,6 +2418,7 @@ label[for="file-upload"] {
 
   .container {
     padding: 0 24px;
+    max-width: 770px;
   }
 
   .header {
@@ -2532,11 +2538,11 @@ label[for="file-upload"] {
 
   .family-main-screen__content p {
     max-width: 60%;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .family-main-screen__content p span {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .family-main-screen__button {
@@ -2561,6 +2567,7 @@ label[for="file-upload"] {
 
   .two-columns .container .row {
     margin: 0 9px;
+    padding: 24px 0;
   }
 
   .two-columns h2 {
@@ -2573,8 +2580,6 @@ label[for="file-upload"] {
   }
 
   .info-block__image {
-    width: 345px;
-    height: 345px;
     margin: auto;
   }
 
@@ -2692,6 +2697,7 @@ label[for="file-upload"] {
 
   .container {
     padding: 0 14px;
+    max-width: 100%;
   }
 
   .header {
@@ -2775,11 +2781,6 @@ label[for="file-upload"] {
 
   .family-main-screen__content p {
     max-width: 100%;
-    font-size: 18px;
-  }
-
-  .family-main-screen__content p span {
-    font-size: 18px;
   }
 
   .family-main-screen__button_text {
@@ -2842,6 +2843,11 @@ label[for="file-upload"] {
     height: auto;
   }
 
+  .info-block__image img {
+    width: 50%;
+    margin: auto;
+  }
+
   .icons {
     padding: 40px 0 10px 0;
   }
@@ -2892,9 +2898,17 @@ label[for="file-upload"] {
 }
 
 @media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+
   .col-12 {
     max-width: 100%;
     flex: 0 0 100%;
+  }
+
+  .info-block__image img {
+    width: 100%;
   }
 }
 
