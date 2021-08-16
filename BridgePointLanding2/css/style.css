@@ -1669,6 +1669,7 @@ label[for="file-upload"] {
 }
 
 .icons .col-md-3 h3 {
+  font-family: "HelveticaNowDisplay-XBd", sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -1744,6 +1745,10 @@ label[for="file-upload"] {
 }
 
 .banner__image .mobile-image {
+  display: none;
+}
+
+.banner__image .tablet-md-image {
   display: none;
 }
 
@@ -2303,6 +2308,11 @@ label[for="file-upload"] {
     padding: 0 15px !important;
   }
 
+  .footer-awards-row .awards__description {
+    margin: 0 55px 0 10px;
+    white-space: nowrap;
+  }
+
   .family-main-screen {
     height: 460px;
   }
@@ -2312,7 +2322,12 @@ label[for="file-upload"] {
   }
 
   .family-main-screen__content p {
-    max-width: 73%;
+    max-width: 53%;
+  }
+
+  .family-main-screen__content p span {
+    display: block;
+    width: fit-content;
   }
 
   .two-columns .container {
@@ -2390,12 +2405,6 @@ label[for="file-upload"] {
 
   .banner__content h2 {
     font-size: 30px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .footer-awards-row .awards__description {
-    margin: 0 40px;
   }
 }
 
@@ -2536,6 +2545,15 @@ label[for="file-upload"] {
     object-position: inherit;
   }
 
+  .family-main-screen__image .desktop-image {
+    display: none;
+  }
+
+  .family-main-screen__image .mobile-image {
+    display: block;
+    object-position: 75%;
+  }
+
   .family-main-screen__content h2 {
     font-size: 21px;
   }
@@ -2545,12 +2563,13 @@ label[for="file-upload"] {
   }
 
   .family-main-screen__content p {
-    max-width: 60%;
-    font-size: 18px;
+    max-width: 62%;
+    font-size: 21px;
   }
 
   .family-main-screen__content p span {
-    font-size: 18px;
+    font-size: 21px;
+    display: inline;
   }
 
   .family-main-screen__button_text {
@@ -2774,17 +2793,12 @@ label[for="file-upload"] {
     display: none;
   }
 
+  p {
+    letter-spacing: -0.2px;
+  }
+
   .family-main-screen {
     padding: 50px 0 30px 0;
-  }
-
-  .family-main-screen__image .desktop-image {
-    display: none;
-  }
-
-  .family-main-screen__image .mobile-image {
-    display: block;
-    object-position: 75%;
   }
 
   .family-main-screen__content h2 {
@@ -2797,7 +2811,6 @@ label[for="file-upload"] {
 
   .family-main-screen__content p {
     max-width: 100%;
-    letter-spacing: 0.2px;
   }
 
   .family-main-screen__content p span {
@@ -2903,15 +2916,16 @@ label[for="file-upload"] {
   }
 
   .banner {
+    padding-bottom: 200px;
     height: auto;
-  }
-
-  .banner__image .mobile-image {
-    display: block;
   }
 
   .banner__image .desktop-image {
     display: none;
+  }
+
+  .banner__image .tablet-md-image {
+    display: block;
   }
 
   .banner__content {
@@ -3042,6 +3056,17 @@ label[for="file-upload"] {
     flex: 0 0 100.0%;
     max-width: 100.0%;
     padding: 0 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .banner__image .mobile-image {
+    display: block;
+    object-position: bottom;
+  }
+
+  .banner__image .tablet-md-image {
+    display: none;
   }
 }
 
